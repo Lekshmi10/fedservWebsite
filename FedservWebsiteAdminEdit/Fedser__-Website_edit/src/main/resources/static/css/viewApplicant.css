@@ -1,0 +1,83 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto; /* Add this line to center the table */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.email, .number {
+    font-style: italic;
+}
+
+.actions {
+    text-align: center;
+}
+
+.view-btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+
+}
+.footer-widget{
+    margin-top: 15%;
+}
+
+/* reject code Style for the "Reject" button */
+.reject-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional style for better visibility */
+.reject-btn:hover {
+    background-color: darkred;
+}
+
+.export-button {
+    background-color: orange;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 140px;
+}
+
+.export-button:hover {
+    background-color: darkorange;
+}
+
+
+
+
+
+

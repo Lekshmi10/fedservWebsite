@@ -1,0 +1,64 @@
+@mixin breakpoint($point) {
+  @if $point == mx480 {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+  @if $point == mx481 {
+    @media (max-width: 375px) {
+      @content;
+    }
+  } @else if $point == mx680 {
+    @media (max-width: 680px) {
+      @content;
+    }
+  } @else if $point == mx767 {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == mn768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == mx991 {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == mn992 {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == mx1023 {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $point == mn1024 {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == mx1199 {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == mn1200 {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == mx1279 {
+    @media (max-width: 1279px) {
+      @content;
+    }
+  } @else if $point == mn1280 {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  } @else if $point == mx1485 {
+    @media (max-width: 1485px) {
+      @content;
+    }
+  } @else if $point == mn1486 {
+    @media (min-width: 1486px) {
+      @content;
+    }
+  }
+}

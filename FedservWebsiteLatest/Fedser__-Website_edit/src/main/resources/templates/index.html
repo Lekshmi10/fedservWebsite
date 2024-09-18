@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <title>Home</title>
+</head>
+<body>
+<header class="header-widget">
+    <div class="container">
+        <a  class="logo" href="/">
+            <img src="../images/logo.png" class="image">
+        </a>
+        <div class="navigation-widget" id="navigation-widget">
+            <button class="close-navigation">
+                <svg class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+            </button>
+            <div class="nav-container">
+                <div class="nav-address-row">
+                    <a class="nav-logo" href="index.html">
+                        <img src="../images//modal-logo.png">
+
+                    </a>
+
+                </div>
+                <div class="nav-link-row">
+                    <ul>
+                        <li>
+                            <a href="/" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/career">Career</a>
+                        </li>
+                        <li>
+                            <a href="/download">Downloads</a>
+                        </li>
+                        <li>
+                            <a href="/gallery">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="tel:04842412000" class="call-btn">
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"><path d="M1 4.62405C1 11.2957 7.71573 16.7042 16 16.7042H18.25C19.4926 16.7042 20.5 15.893 20.5 14.8922V13.7876C20.5 13.3718 20.1487 13.0094 19.6479 12.9086L15.2247 12.0181C14.7855 11.9296 14.3234 12.0618 14.0518 12.3534L13.0816 13.3952C12.8 13.6976 12.313 13.8313 11.8723 13.7013C8.56539 12.7257 5.94015 10.6115 4.72876 7.94824C4.56734 7.59335 4.73336 7.20114 5.1088 6.97437L6.40242 6.19301C6.76453 5.97429 6.92861 5.60211 6.81883 5.24846L5.71304 1.68627C5.58783 1.28295 5.13785 1 4.62163 1H3.25C2.00736 1 1 1.81127 1 2.81203V4.62405Z" stroke="#E95F46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>0484 - 2412000</span>
+        </a>
+        <div class="nav-control">
+            <a href="/contact" class="get-in-touch">Get in Touch</a>
+            <button class="hamburger">
+                <svg width="36" height="19" viewBox="0 0 36 19" fill="none"><path d="M1 1H35M1 9.31758H35M18 17.6352H35" stroke="#FD2E35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="banner-widget">
+    <div class="container">
+        <div class="banner-content">
+            <h1>
+                We are curating experiences that
+                <span>Adapting Technical Innovation</span>
+            </h1>
+        </div>
+        <div class="banner-img">
+            <a data-fancybox="banner-video" href="../images/banner-video.mp4" class="play-button">
+                <svg width="23" height="27" viewBox="0 0 23 27" fill="none"><path d="M4.28551 0.426433C2.42434 -0.723454 0 0.587321 0 2.74349V24.2565C0 26.4127 2.42435 27.7235 4.28551 26.5736L21.6956 15.8171C23.4348 14.7425 23.4348 12.2575 21.6956 11.1829L4.28551 0.426433Z" fill="#FAFAFA"/></svg>
+            </a>
+            <!-- <img src="./static/images/main-banner.jpg"> -->
+            <video width="585" height="327" muted autoplay id="banner-video">
+                <source src="../images/banner-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="bottom-line">
+        <div class="container">
+            <div class="btm-col-1">
+                <div class="location">
+                    <strong>03+</strong>
+                    <span>Location</span>
+                </div>
+                <div class="Process">
+                    <strong>100+</strong>
+                    <span>Process</span>
+                </div>
+                <div class="employes">
+                    <strong>800+</strong>
+                    <span>Employees</span>
+                </div>
+            </div>
+            <div class="socialmedia">
+                <a target="_blank" class="socialmedia-link" href="https://www.facebook.com/fedserv">
+                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none"><path d="M2.432 8.7982V15.3982H5.712V8.7982H8.297V5.5572H5.519V3.7822C5.59954 3.51744 5.77216 3.29024 6.00564 3.14167C6.23912 2.99311 6.51805 2.933 6.792 2.9722C7.872 3.0112 8.566 2.9722 8.566 2.9722V0.00119591H5.518C5.518 0.00119591 2.475 -0.167804 2.431 3.5122C2.421 4.3982 2.431 5.5572 2.431 5.5572H0V8.7982H2.432Z" fill="#FAFAFA"/></svg>
+                </a>
+                <a target="_blank"  class="socialmedia-link" href="https://twitter.com/FFedserv">
+                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none"><path d="M18.988 1.82354C18.2771 2.13838 17.5231 2.345 16.751 2.43654C17.5645 1.94983 18.1734 1.18391 18.464 0.281543C17.6992 0.735264 16.8625 1.05487 15.99 1.22654C15.4024 0.602503 14.6257 0.1894 13.7798 0.0511054C12.9339 -0.0871895 12.066 0.0570266 11.3103 0.461456C10.5546 0.865885 9.95319 1.508 9.59903 2.28853C9.24487 3.06905 9.1577 3.94451 9.351 4.77954C7.80215 4.70195 6.28693 4.29951 4.9037 3.59833C3.52048 2.89716 2.30017 1.91293 1.322 0.709543C0.824278 1.56719 0.671939 2.58223 0.89597 3.5482C1.12 4.51417 1.70358 5.35853 2.528 5.90954C1.90932 5.89065 1.30415 5.72401 0.763 5.42354V5.47254C0.763512 6.37197 1.07489 7.24358 1.64439 7.93973C2.21389 8.63589 3.00651 9.11381 3.888 9.29254C3.31443 9.44864 2.71278 9.47155 2.129 9.35954C2.3779 10.1333 2.86234 10.81 3.5146 11.2949C4.16686 11.7799 4.95435 12.049 5.767 12.0645C4.38707 13.1473 2.68303 13.7345 0.929 13.7315C0.618484 13.7308 0.308283 13.7117 0 13.6745C1.78134 14.8192 3.8546 15.4267 5.972 15.4245C7.43005 15.4345 8.87556 15.1547 10.2246 14.6014C11.5736 14.0481 12.7993 13.2323 13.8304 12.2013C14.8615 11.1704 15.6775 9.9449 16.2311 8.59597C16.7846 7.24705 17.0647 5.8016 17.055 4.34354C17.055 4.17488 17.0513 4.00821 17.044 3.84354C17.8067 3.29209 18.465 2.60907 18.988 1.82654" fill="#FAFAFA"/></svg>
+                </a>
+                <a target="_blank" class="socialmedia-link" href="https://www.linkedin.com/company/federal-operations-and-services-ltd-fedserv/">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12.153 15.649C12.153 15.649 12.111 11.374 12.153 9.13C12.1262 8.923 12.0589 8.72332 11.9549 8.54238C11.8508 8.36144 11.7121 8.20279 11.5467 8.07554C11.3813 7.94828 11.1924 7.8549 10.9908 7.80076C10.7892 7.74661 10.5789 7.73276 10.372 7.76C10.1588 7.73501 9.94266 7.75442 9.73729 7.81701C9.53192 7.8796 9.34172 7.98402 9.17866 8.12369C9.01561 8.26336 8.88322 8.43526 8.78983 8.62858C8.69644 8.8219 8.64406 9.03245 8.636 9.247C8.615 10.237 8.613 15.647 8.613 15.647H5.669L5.595 5.309H8.612V6.738C8.612 6.738 10.232 4.865 12.153 5.138C13.0082 5.17163 13.8176 5.53314 14.4134 6.14757C15.0093 6.76199 15.3457 7.58217 15.353 8.438C15.391 10.289 15.353 15.653 15.353 15.653L12.153 15.649ZM0.667 15.627V5.32H3.66V15.627H0.667ZM0 2.161C4.5757e-08 1.73364 0.126715 1.31587 0.364125 0.960517C0.601534 0.605165 0.938977 0.328183 1.33379 0.164593C1.7286 0.00100259 2.16306 -0.0418508 2.58222 0.0414509C3.00139 0.124753 3.38644 0.330469 3.6887 0.63259C3.99097 0.934711 4.19686 1.31967 4.28035 1.7388C4.36385 2.15792 4.3212 2.5924 4.15779 2.98729C3.99438 3.38218 3.71756 3.71975 3.36231 3.95732C3.00707 4.19489 2.58936 4.3218 2.162 4.322C1.87813 4.32213 1.59701 4.26633 1.33471 4.15779C1.07241 4.04925 0.834069 3.89009 0.633296 3.68941C0.432522 3.48873 0.273255 3.25046 0.164592 2.98821C0.055929 2.72596 -3.03935e-08 2.44487 0 2.161H0Z" fill="#FAFAFA"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="dep-widget">
+    <div class="container">
+        <div class="department-carosal">
+            <a href="about.html" class="department-list">
+                <img class="dep-img" src="../images/dep-soft.png">
+                <span class="dep-content">
+                    <p>Our  development team is always ready to take a step beyond your expectations. We have an expert team of  developers who create stunning applications</p>
+                </span>
+            </a>
+            <a href="about.html" class="department-list">
+                <img class="dep-img" src="../images/dep-opr.png">
+                <span class="dep-content">
+                    <p>Our Contact Center instantly responds to the calls and queries of bank customers who need not wait for hours to get in touch with the bank and clear their queries </p>
+                </span>
+            </a>
+            <a href="about.html" class="department-list">
+                <img class="dep-img" src="../images/dep-cont.png">
+                <span class="dep-content">
+                    <p>All the operational tasks for Federal Bank are effectively handled and completed by the talented and Dedicated personnel at FedServ</p>
+                </span>
+            </a>
+            <a href="about.html" class="department-list">
+                <img class="dep-img" src="../images/dep-soft.png">
+                <span class="dep-content">
+                    <p>Our  development team is always ready to take a step beyond your expectations. We have an expert team of  developers who create stunning applications</p>
+                </span>
+            </a>
+            <a href="about.html" class="department-list">
+                <img class="dep-img" src="../images/dep-opr.png">
+                <span class="dep-content">
+                    <p>Our Contact Center instantly responds to the calls and queries of bank customers who need not wait for hours to get in touch with the bank and clear their queries </p>
+                </span>
+            </a>
+            <a href="about.html" class="department-list">
+                <img class="dep-img" src="../images/dep-cont.png">
+                <span class="dep-content">
+                    <p>All the operational tasks for Federal Bank are effectively handled and completed by the talented and Dedicated personnel at FedServ</p>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="career-widget" style="background-image: url('../images/carrer-img.png');">
+    <div class="container">
+        <div class="career-title">
+            <h3>We are growing</h3>
+            <h2>Want to Join Us?</h2>
+            <a href="/career" class="explore-btn">Explore Opening</a>
+        </div>
+        <div class="career-carosal-row">
+            <div class="carosal-container">
+                <div class="career-carosal">
+                    <div class="carosal-list">
+                        <img src="../images/event1.png">
+                    </div>
+                    <div class="carosal-list">
+                        <img src="../images/event2.png">
+                    </div>
+                    <div class="carosal-list">
+                        <img src="../images/event3.png">
+                    </div>
+                    <div class="carosal-list">
+                        <img src="../images/event1.png">
+                    </div>
+                    <div class="carosal-list">
+                        <img src="../images/event2.png">
+                    </div>
+                    <div class="carosal-list">
+                        <img src="../images/event3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer-widget">
+    <div class="container">
+        <div class="about-content">
+            <a class="footer-logo">
+                <img src="../images/footer-logo.png">
+            </a>
+            <strong> Federal Operations and Services Limited</strong>
+            <p> is a newly formed wholly owned subsidiary company of The Federal Bank Ltd, registered under Companies Act, 2013 on 26th October 2018.</p>
+
+        </div>
+        <div class="address-list">
+            <strong>Kerala</strong>
+            <p>Ground Floor, Carnival Infopark Phase 1, Kakkanad, Kochi 682042, Kerala </p>
+        </div>
+        <div class="address-list">
+            <strong>Vishakhapatnam</strong>
+            <p>3rd Floor- Mahathi Software Private Ltd. (Mahathi building), Hill No. 2, Plot no. 12 & 13, Bay Area, Rushikonda, Madhurawada, Vishakhapatnam -530045</p>
+        </div>
+        <div class="address-list">
+            <strong>Bangalore</strong>
+            <p>Neil Rao Tower, 117 & 118, Rd Number 3, Vijayanagar, EPIP Phase I, Whitefield, Bengaluru, Karnataka 560066</p>
+        </div>
+    </div>
+</footer>
+<div class="term-conditions">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="#">  Privacy Policy</a>
+            </li>
+        </ul>
+        <p>© 2023 FedServ</p>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="../script/home.js"></script>
+</body>
+</html>

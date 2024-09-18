@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Edit_fedservWebsite:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Edit_fedservWebsite</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Fedserv_Website-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Edit_fedservWebsite:war exploded" />
+    </root>
+  </artifact>
+</component>

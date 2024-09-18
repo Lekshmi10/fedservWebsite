@@ -1,0 +1,324 @@
+@import "layout";
+.banner-widget{
+  padding-top: 70px;
+  @include breakpoint(mx767){
+    padding-top: 0;
+  }
+  .container{
+    display: flex;
+  }
+  >.container{
+    @include breakpoint(mx767){
+      background-image: url(../images/shape-dev.png);
+      background-repeat: no-repeat;
+      background-size: 45%;
+      background-position: right bottom;
+    }
+    .banner-content{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      @include breakpoint(mx767){
+        padding: 35px 0 85px 0;
+        min-height: 300px;
+      }
+      h1{
+        color: #221429;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 44px;
+        @include breakpoint(mx1023){
+          font-size: 30px;
+          line-height: 42px;
+        }
+        @include breakpoint(mx767){
+          font-size: 34px;
+          line-height: 44px;
+          font-weight: 800;
+        }
+        span{
+          margin-top: 22px;
+          display: block;
+          color: var(--primary-colour);
+          font-weight: 700;
+          font-size: 42px;
+          line-height: 44px;
+          @include breakpoint(mx1023){
+            font-size: 30px;
+            line-height: 42px;
+            margin-top: 0;
+          }
+          @include breakpoint(mx767){
+            font-size: 34px;
+            line-height: 44px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+    .banner-img{
+      padding: 50px 0;
+      max-width: 585px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      @include breakpoint(mx1023){
+        max-width: 445px;
+      }
+      @include breakpoint(mx767){
+        display: none;
+      }
+      .play-button{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        &:after{
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: var(--primary-colour);
+          opacity: .5;
+          animation: zoom-in 2.5s ease-out infinite;
+        }
+        &:before{
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: var(--primary-colour);
+          opacity: .2;
+          animation: zoom-in 2s ease-out infinite;
+        }
+        svg{
+          position: relative;
+          z-index: 1;
+        }
+      }
+      img{
+        display: block;
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: 0 2px 60px 5px rgba(0, 0, 0, .22);
+      }
+      video{
+        display: block;
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: 0 2px 60px 5px rgba(0, 0, 0, .22);
+      }
+    }
+  }
+  .bottom-line{
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0EEED;
+    .btm-col-1{
+      display: flex;
+      align-items: center;
+      @include breakpoint(mx767){
+        width: 100%;
+        justify-content: center;
+      }
+      div{
+        width: 200px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        border-left: solid 2px var(--primary-colour);
+        @include breakpoint(mx1023){
+          font-size: 20px;
+        }
+        @include breakpoint(mx767){
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          border-left: none;
+        }
+        strong{
+          font-weight: 700;
+          font-size: 24px;
+          color: var(--text-color);
+          margin-bottom: 6px;
+          @include breakpoint(mx767){
+            text-align: center;
+            color: var(--primary-colour);
+          }
+        }
+        span{
+          font-weight: 400;
+          font-size: 18px;
+          color: var(--text-color);
+          opacity: .7;
+          @include breakpoint(mx767){
+            text-align: center;
+          }
+        }
+      }
+    }
+    .socialmedia{
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      @include breakpoint(mx767){
+        display: none;
+      }
+      .socialmedia-link{
+        margin-left: 6px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        background-color: #2D2D2D;
+        transition: ease-in-out .4s;
+        &:hover{
+          background-color: var(--primary-colour);
+        }
+      }
+    }
+  }
+}
+.dep-widget{
+  padding: 50px 0 80px 0;
+  border-bottom: solid 5px var(--primary-colour);
+  @include breakpoint(mx767){
+    padding: 40px 0 45px 0;
+  }
+  .department-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    .dep-img{
+      display: block;
+      margin-bottom: 25px;
+    }
+    .dep-content{
+      padding-left: 12px;
+      border-left: solid 3px var(--primary-colour);
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-color);
+      }
+    }
+    .slick-slide {
+      margin: 0 5px;
+    }
+    .slick-list {
+      margin: 0px -5px 0px -5px;
+    }
+  }
+}
+.career-widget{
+  padding-top: 135px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #020305;
+  @include breakpoint(mx1199){
+    padding-top: 100px;
+  }
+  @include breakpoint(mx767){
+    padding-top: 55px;
+  }
+  .career-title{
+    @include breakpoint(mx1199){
+      margin-bottom: 55px;
+    }
+    h3{
+      font-size: 34px;
+      line-height: 60px;
+      font-weight: 400;
+      color: var(--primary-colour);
+      @include breakpoint(mx1023){
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    h2{
+      color: #FAFAFA;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 800;
+      display: block;
+      @include breakpoint(mx1023){
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    .explore-btn{
+      margin-top: 45px;
+      color: #fafafa;
+      font-weight: 700;
+      border: solid 1px var(--primary-colour);
+      border-radius: 30px;
+      width: 195px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: ease-in-out .4s;
+      @include breakpoint(mx1023){
+        margin-top: 20px;
+      }
+      &:hover{
+        background-color: var(--primary-colour);
+      }
+    }
+  }
+  .career-carosal-row{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+    @include breakpoint(mx991){
+      justify-content: center;
+    }
+      .carosal-container{
+        max-width: 650px;
+        max-width: 650px;
+        position: relative;
+        right: -10px;
+        @include breakpoint(mx767){
+          max-width: 100%;
+          right: 0;
+        }
+        .career-carosal{
+          display: flex;
+          align-items: center;
+        }
+        .carosal-list{
+          padding: 0 10px;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+        .slide-nav{
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+        .slide-nav-prev{
+          display: none!important;
+        }
+      }
+  }
+}

@@ -1,0 +1,95 @@
+
+table {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+th {
+    text-align: left;
+    font-size: 18px; /* Increase the font size */
+    font-weight: bold; /* Apply bold font weight */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+td.title {
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+td.actions {
+    text-align: right;
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items at the end */
+    padding: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+td.actions button {
+    margin-left: 5px; /* Add margin to create a gap between buttons */
+    width: auto; /* Set width to auto for responsiveness */
+    min-width: 80px; /* Set minimum width for the buttons */
+}
+
+td.actions .view-btn {
+    background-color: #00407c; /* Set background color for the view button */
+    color: white; /* Set text color for the view button */
+    border-radius: 10px;
+    padding: 5px;
+    cursor:pointer
+}
+
+td.actions .close-btn {
+    background-color: red; /* Set background color for the close button */
+    color: white; /* Set text color for the close button */
+    border-radius: 10px;
+    padding: 5px;
+    cursor:pointer
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 767px) {
+    table {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    th,
+    td.title {
+        text-align: left;
+    }
+
+    td.actions {
+        text-align: left; /* Adjust alignment for small screens */
+    }
+
+    td.actions button {
+        margin-left: 5px; /* Add margin to create a gap between buttons */
+        width: auto; /* Set width to auto for responsiveness */
+        min-width: 80px; /* Set minimum width for the buttons */
+        margin-top: 5px; /* Add margin at the top for spacing */
+    }
+
+    td.actions .view-btn {
+        background-color: blue; /* Set background color for the view button */
+        color: white; /* Set text color for the view button */
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    td.actions .close-btn {
+        background-color: red; /* Set background color for the close button */
+        color: white; /* Set text color for the close button */
+        border-radius: 10px;
+        padding: 5px;
+    }
+}
+

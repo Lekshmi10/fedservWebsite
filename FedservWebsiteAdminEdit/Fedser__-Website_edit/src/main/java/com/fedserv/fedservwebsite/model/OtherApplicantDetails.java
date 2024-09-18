@@ -1,0 +1,114 @@
+package com.fedserv.fedservwebsite.model;
+
+import javax.persistence.*;
+
+@Entity(name = "Other_Applicant_Details")
+@Table(name="Other_Applicant_Details")
+public class OtherApplicantDetails {
+
+
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "other_applicant_generator")
+    @SequenceGenerator(name = "other_applicant_generator", sequenceName = "other_applicant_generatorr_seq", allocationSize = 1)
+    int id;
+    @Column(name = "FIRSTNAME")
+    private String firstName;
+    @Column(name = "LASTNAME")
+    private String lastName;
+
+    @Column(name = "EMAILID")
+    private String emailId;
+    @Column(name = "MOBILENUMBER")
+    private String mobileNumber;
+    @Column(name = "RESUME")
+    @Lob
+    private byte[] resume;
+
+
+    @Column(name = "ApplicantId")
+    private String applicantId;
+
+    public String getViewedDate() {
+        return viewedDate;
+    }
+
+    public void setViewedDate(String viewedDate) {
+        this.viewedDate = viewedDate;
+    }
+
+    @Column(name = "VIEWED_DATE")
+
+    private String viewedDate;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public byte[] getResume() {
+        return resume;
+    }
+
+    public void setResume(byte[] resume) {
+        this.resume = resume;
+    }
+
+    public String getApplicantId() {
+        return applicantId;
+    }
+
+    public void setApplicantId(String applicantId) {
+        this.applicantId = applicantId;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
